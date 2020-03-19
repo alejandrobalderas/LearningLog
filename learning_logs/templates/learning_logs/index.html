@@ -1,5 +1,11 @@
 {% extends "learning_logs/base.html" %}
-{% block content %}
+{% block page_header %}
+<div class="jumbotron">
+    <h1 class="display-3">Track your learning.</h1>
+    <p class="lead">Make your own Learning log... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+        eaque, in magni maiores nihil reiciendis sapiente sed veritatis. Accusamus accusantium aliquid assumenda
+        blanditiis, excepturi illo nemo obcaecati repellat ullam voluptatum?</p>
+    <a href="{%url 'users:register'%}" class="btn btn-lg btn-primary" role="button">Register &raquo;</a>
+</div>
 
-<p>Learning Log helps you track of your learning</p>
-{% endblock content %}
+{% endblock page_header %}
